@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Flores y Sorpresa</title>
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600&family=Parisienne&display=swap" rel="stylesheet">
+</head>
+<body class="container">
+
+  <!-- PANTALLA 1: FLORES -->
+  <div id="screen-flowers">
+    <div class="night"></div>
+    <div class="flowers">
+      <!-- (Tu contenido de flores original) -->
+      <div class="flower flower--1"><div class="flower__leafs flower__leafs--1"></div><div class="flower__line"></div></div>
+      <div class="flower flower--2"><div class="flower__leafs flower__leafs--2"></div><div class="flower__line"></div></div>
+      <div class="flower flower--3"><div class="flower__leafs flower__leafs--3"></div><div class="flower__line"></div></div>
+      <div class="flower flower--4"><div class="flower__leafs flower__leafs--3"></div><div class="flower__line"></div></div>
+    </div>
+    <div style="position: absolute; bottom: 8%; left: 50%; transform: translateX(-50%); z-index: 999;">
+      <button class="btn" onclick="showLetter()">Ver mensaje sorpresa</button>
+    </div>
+  </div>
+
+  <!-- PANTALLA 2: CARTA -->
+  <div class="overlay-page" id="screen-letter" style="display: none;">
+    <button class="btn-ghost" onclick="showFlowers()">← Volver</button>
+    <div class="stage">
+      <h1 class="caption">Para ti, mi amor</h1>
+      <div class="heart-stage"><div class="heart-shape"></div>
+        <div class="letter">
+          <div class="greeting">Mi niña hermosa,</div>
+          <p>Quería prepararte algo especial porque te mereces todo lo lindo del mundo.</p>
+          <div class="signature">Te amo muchísimo.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
